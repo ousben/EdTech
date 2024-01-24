@@ -94,6 +94,28 @@ body {
   width: 75%;
 }
 
+#welcome-back {
+  height: 15em;
+  width: 30em;
+  background-color: green;
+  margin: 3em;
+}
+
+#course-container {
+  display: block;
+  height: 20em;
+  margin: 3em;
+  background-color: green;
+}
+
+.course-card {
+  display: inline-block;
+  margin: 1em;
+  background-color: blue;
+  height: 15em;
+  width: 10em;
+}
+
 #stats {
   width: 25%;
 }
