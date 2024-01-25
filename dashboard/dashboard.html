@@ -23,55 +23,65 @@
           <a href="/paths/paths.html">Parcours</a>
         </li>
         <li class="nav-item">
-          <a href="/quest/quest.html">Quêtes</a>
-        </li>
-        <li class="nav-item">
           <a href="/profile/profile.html">Profil</a>
         </li>
         <li class="nav-item">
           <a href="/settings/settings.html">Préférences</a>
         </li>
       </ul>
+
+      <h2 id="logout">Log Out</h2>
     </nav>
 
     <header id="navbar">
-      <input type="text">
+      <input id="search-input" type="text" placeholder="Search for a course here...">
     </header>
 
     <main id="main">
       <div id="main-display">
         <div id="welcome-back">
-          <h1>(Re)Bonjour Oussama !</h1>
+          <h1>Bonjour Oussama !</h1>
           <h2>Votre dernier cours était : Compliance</h2>
 
-          <button id="resume-button">Continuer !</button>
+          <h3>Continuez votre cours</h3>
         </div>
 
-        <h1>Vos cours</h1>
+        <h1>Vos leçon en cours :</h1>
 
         <div id="course-container">
           <div class="course-card">
-            <h2>Finance Quantitative</h2>
+            <h2>Finance de Marché</h2>
             <h2>Modèles non-linéaires</h2>
             <h2>Progress</h2>
           </div>
           <div class="course-card">
-            <h2>Finance Quantitative</h2>
-            <h2>Modèles non-linéaires</h2>
+            <h2>Risque de Marché</h2>
+            <h2>Value at Risk (VaR)</h2>
             <h2>Progress</h2>
           </div>
           <div class="course-card">
-            <h2>Finance Quantitative</h2>
-            <h2>Modèles non-linéaires</h2>
+            <h2>Finance d'entreprise</h2>
+            <h2>Evaluation DCF</h2>
             <h2>Progress</h2>
+          </div>
+          <div class="course-card">
+            <h2>Gestion financière</h2>
+            <h2>gestion Actif-Passif</h2>
+            <h2>Progrès</h2>
           </div>
         </div>  
       </div>
 
       <div id="stats">
-        <div id="daily-target"></div>
-        <div id="activity"></div>
-        <div id="statistics"></div>
+        <div id="daily-target" class="stats-component">
+          <h1>Your daily target :</h1>
+        </div>
+        <div id="activity" class="stats-component">
+          <h1>Your latest courses statistics were :</h1>
+        </div>
+        <div id="statistics" class="stats-component">
+          <h1>Your general statistics were : </h1>
+        </div>
       </div>
     </main>
 

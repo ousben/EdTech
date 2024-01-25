@@ -24,12 +24,13 @@ body {
   
 #sidebar {
   grid-area: sidebar;
-  background-color: #5927E5;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  color: white;
+  color: #000000;
+  border-right: 0.25em solid #000000;
 }
 
 #logo {
@@ -38,6 +39,7 @@ body {
   height: 5.5rem;
   align-items: center;
   justify-content: center;
+  border-bottom: 0.25em solid #000000;
 }
 
 #logo a {
@@ -49,10 +51,6 @@ body {
 }
 
 #nav-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 85vh;
   width: 100%;
   margin: 0;
@@ -72,22 +70,40 @@ body {
   text-decoration: none;
   color: inherit;
   padding: 1.5em;
+  font-size: 1.25em;
 }
 
 .nav-item a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #000000;
   color: white;
+  font-size: 1.25em;
 }
 
 #navbar {
+  display: flex;
   grid-area: navbar;
-  background-color: red;
+  background-color: #ffffff;
+  border-bottom: 0.25em solid #000000;
+  align-items: center;
+}
+
+#search-input {
+  height: 40%;
+  width: 20%;
+  margin-left: 2em;
+  border: 3px solid #000000;
+  font-weight: 800;
+}
+
+#search-input::placeholder {
+  color: #000000;
+  font-weight: 600;
 }
 
 #main {
   grid-area: main;
   display: flex;
-  padding: 2em;
+  padding-left: 2em;
 }
 
 #main-display {
@@ -98,25 +114,85 @@ body {
 #welcome-back {
   height: 15em;
   width: 30em;
-  background-color: green;
-  margin: 3em;
+  background-color: #ffffff;
+  border: 5px solid #000000;
+  transition: 0.25 ease-in;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 1em;
+  cursor: pointer;
+}
+
+#welcome-back:hover {
+  transition-duration: 0.2s;
+  box-shadow: -10px 10px #000000;
+  translate: 10px -10px;
+}
+
+#welcome-back:active {
+  transition-duration: 0.1s;
+  box-shadow: none;
+  translate: none;
 }
 
 #course-container {
   display: block;
-  height: 20em;
-  margin: 3em;
-  background-color: green;
+  height: 25em;
+  margin-right: 2em;
+  padding: 0;
 }
 
 .course-card {
   display: inline-block;
-  margin: 1em;
-  background-color: blue;
-  height: 15em;
-  width: 10em;
+  margin-right: 1em;
+  background-color: #ffffff;
+  border: 5px solid #000000;
+  height: 20em;
+  width: 15em;
+  padding: 1em;
+  transition: 0.25 ease-in;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transition-duration: 0.2s;
+  box-shadow: -10px 10px #000000;
+  translate: 10px -10px;
+}
+
+.course-card:active {
+  transition-duration: 0.1s;
+  box-shadow: none;
+  translate: none;
 }
 
 #stats {
+  display: flex;
+  flex-direction: column;
   width: 25%;
+  background-color: #ffffff;
+  border-left: 0.25em solid #000000;
+  padding: 1rem
+}
+
+.stats-component {
+  width: 100%;
+  height: 33%;
+  background-color: #ffffff;
+  border: 5px solid #000000;
+  margin: 10px 10px 10px 0;
+  transition: 0.25 ease-in;
+  cursor: pointer;
+}
+
+.stats-component:hover {
+  transition-duration: 0.2s;
+  box-shadow: -10px 10px #000000;
+  translate: 10px -10px;
+}
+
+.stats-component:active {
+  transition-duration: 0.1s;
+  box-shadow: none;
+  translate: none;
 }
