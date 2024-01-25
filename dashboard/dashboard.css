@@ -42,6 +42,11 @@ body {
   border-bottom: 0.25em solid #000000;
 }
 
+#logo:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 #logo a {
   display: block;
   text-decoration: none;
@@ -134,7 +139,6 @@ body {
   box-shadow: none;
   translate: none;
 }
-
 #course-container {
   display: block;
   height: 25em;

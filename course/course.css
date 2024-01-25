@@ -11,48 +11,55 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-columns: 2fr 6fr 3fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 
+                      "sidebar navbar"
+                      "sidebar main";
+  grid-template-columns: 20em 1fr;
+  grid-template-rows: 5.5rem 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   height: 100vh;
   width: 100vw;
 }
   
-#navbar {
-  grid-area: 1 / 1 / 6 / 2;
-  background-color: #131f24;
+#sidebar {
+  grid-area: sidebar;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width: 100%;
-  color: white;
+  color: #000000;
+  border-right: 0.25em solid #000000;
 }
 
 #logo {
+  display: flex;
   width: 100%;
+  height: 5.5rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.25em solid #000000;
+}
+
+#logo:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 #logo a {
   display: block;
   text-decoration: none;
   color: inherit;
-  text-align: center;
   font-weight: 800;
   font-size: 2em;
-  margin: 1.5em;
 }
 
 #nav-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 85vh;
   width: 100%;
   margin: 0;
-  padding: 0;;
+  padding: 0;
 }
 
 .nav-item {
@@ -68,48 +75,58 @@ body {
   text-decoration: none;
   color: inherit;
   padding: 1.5em;
+  font-size: 1.25em;
 }
 
 .nav-item a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: orange;
+  background-color: #000000;
+  color: white;
+  font-size: 1.25em;
 }
 
-#display-container {
-  grid-area: 1 / 2 / 6 / 3;
+#navbar {
+  display: flex;
+  grid-area: navbar;
   background-color: #ffffff;
+  border-bottom: 0.25em solid #000000;
+  align-items: center;
+}
+
+#search-input {
+  height: 40%;
+  width: 20%;
+  margin-left: 2em;
+  border: 3px solid #000000;
+  font-weight: 800;
+}
+
+#search-input::placeholder {
   color: #000000;
-  padding: 3em;
+  font-weight: 600;
 }
 
-#section-container {
-  text-align: center;
-  width: 100%;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #000000;
+#main {
+  grid-area: main;
+  display: flex;
+  padding-left: 2em;
 }
 
-h2 {
-  margin: 0;
+#main-display {
+  flex: 1;
+  width: 75%;
 }
 
-#course-section {
-  grid-area: 1 / 3 / 6 / 4;
+.course-card:active {
+  transition-duration: 0.1s;
+  box-shadow: none;
+  translate: none;
+}
+
+#chapters {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
   background-color: #ffffff;
-  color: #000000;
-  padding: 3em;
-}
-
-#course-section-title {
-  text-align: center;
-  width: 100%;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #000000;
-}
-
-.course-button {
-  margin: 20px 0;
-  border: 20px;
-  padding: 20px;
-  width: 100%;
+  border-left: 0.25em solid #000000;
+  padding: 1rem
 }

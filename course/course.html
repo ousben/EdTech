@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EdTech App</title>
-  <link rel="stylesheet" href="dashboard.css" type="text/css">
+  <link rel="stylesheet" href="course.css" type="text/css">
 </head>
 <body>
 
   <div class="main-container">
 
-    <nav id="navbar">
+    <nav id="sidebar">
       <div id="logo">
         <a href="/dashboard/dashboard.html">Educ'App</a>
       </div>
@@ -23,43 +23,37 @@
           <a href="/paths/paths.html">Parcours</a>
         </li>
         <li class="nav-item">
-          <a href="/quest/quest.html">Quêtes</a>
-        </li>
-        <li class="nav-item">
           <a href="/profile/profile.html">Profil</a>
         </li>
         <li class="nav-item">
           <a href="/settings/settings.html">Préférences</a>
         </li>
       </ul>
+
+      <h2 id="logout">Log Out</h2>
     </nav>
-  
-    <div id="display-container">
-      <div id="section-container">
-        <h2>Section 1 : Blanchiment d'argent</h2>
+
+    <header id="navbar">
+      <input id="search-input" type="text" placeholder="Search for a course here...">
+    </header>
+
+    <main id="main">
+      <div id="main-display">
+
+
+
+
+
       </div>
-    
-      <div id="path-container">
-        
+
+      <div id="chapters">
+
+
+
+
       </div>
-    </div>
-  
-    <div id="course-section">
-      <div id="course-section-title">
-        <h2>Apprentissage</h2>
-      </div>
-      <div id="">
-        <div class="div-section">
-          <button class="course-button">Section 2 : Blanchiment</button>
-        </div>
-        <div class="div-section">
-          <button class="course-button">Section 2 : LCB</button>
-        </div>
-        <div class="div-section">
-          <button class="course-button">Section 3 : RSE</button>
-        </div>
-      </div>
-    </div>
+    </main>
+
   </div>
 </body>
 </html>
