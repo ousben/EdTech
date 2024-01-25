@@ -24,7 +24,7 @@ body {
   
 #sidebar {
   grid-area: sidebar;
-  background-color: #131f24;
+  background-color: #5927E5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +76,7 @@ body {
 
 .nav-item a:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: orange;
+  color: white;
 }
 
 #navbar {
@@ -87,6 +87,7 @@ body {
 #main {
   grid-area: main;
   display: flex;
+  padding: 2em;
 }
 
 #main-display {
