@@ -130,3 +130,13 @@ body {
   border-left: 0.25em solid #000000;
   padding: 1rem
 }
+
+.list-chapters {
+  width: 100%;
+  height: 33%;
+  background-color: #ffffff;
+  border: 5px solid #000000;
+  margin: 10px 10px 10px 0;
+  transition: 0.25 ease-in;
+  cursor: pointer;
+}
