@@ -208,6 +208,8 @@ body {
   height: 33%;
   background-color: #ffffff;
   margin: 10px 10px 10px 0;
+  border: 5px solid #000000;
+  padding: 1em;
   transition: 0.25 ease-in;
   cursor: pointer;
 }
