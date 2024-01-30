@@ -140,6 +140,7 @@ body {
 
 .latest-courses-div {
   width: 40%;
+  height: 8rem;
   margin: 1em 0;
   padding: 0 1em;
   border: 5px solid #000000;
@@ -156,6 +157,14 @@ body {
   transition-duration: 0.1s;
   box-shadow: none;
   translate: none;
+}
+
+.course-progress {
+  width : 100%;
+  height: 1em;
+  border-radius : 1em;
+  border: 2px solid #000000;
+  background-image: linear-gradient(to right, #000000 var(--progress), transparent var(--progress));
 }
 
 #achievements {
