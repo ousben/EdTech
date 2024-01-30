@@ -167,3 +167,26 @@ body {
   box-shadow: none;
   translate: none;
 }
+
+#toast, #toast-end {
+  border: none;
+  background: none;
+  animation: scale-animation 0.5s;
+}
+
+#toast::backdrop {
+  background-color: rgb(50, 215, 75);
+}
+
+#toast-end::backdrop {
+  background-color: rgb(50, 215, 75);
+}
+
+@keyframes scale-animation {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
