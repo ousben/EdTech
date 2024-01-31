@@ -6,20 +6,20 @@ const toastEnd = document.getElementById("toast-end");
 
 for(let i = 0; i < submitButton.length; i++) {
   submitButton[i].addEventListener("click", function() {
-    if(i != 4) {
+    if(i != 3) {
       document.getElementById(`question-${i+1}`).classList.remove("active-question");
       document.getElementById(`question-${i+2}`).classList.add("active-question");
       
-      toast.showModal()
+      toast.showModal();
       setTimeout(() => {
         toast.close();
       }, 2000);
     } else {
-      toastEnd.showModal()
+      toastEnd.showModal();
       setTimeout(() => {
         toast.close();
         window.location.href = "/course/course.html";
-      },2000);
+      },4000);
     }
   });
 }

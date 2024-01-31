@@ -202,6 +202,10 @@ body {
   translate: none;
 }
 
+img {
+  width: 100%;
+}
+
 #stats {
   margin: 3em 0 0 0;
 }
